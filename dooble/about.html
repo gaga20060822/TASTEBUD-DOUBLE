@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩვენს შესახებ - TasteBud</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Noto+Sans+Georgian:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+     
+        .about-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .about-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .about-header h1 {
+            color: #e74c3c;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text {
+            line-height: 1.8;
+            color: #444;
+        }
+        
+        .about-image {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .story-section {
+            background: #fff9f0;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 3rem;
+            grid-column: 1 / -1;
+        }
+        
+        .story-section h2 {
+            color: #e74c3c;
+            margin-top: 0;
+        }
+        
+        .values-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .value-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .value-item h3 {
+            color: #e74c3c;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* რესპონსივ დიზაინი */
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-header h1 {
+                font-size: 2rem;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🍽️ TasteBud</div>
+        
+        <button class="menu-toggle" aria-label="მენიუ">
+            <span class="hamburger">☰</span>
+            <span class="close">×</span>
+        </button>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="recipe.html">ინგრედიენტები</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="contact.html">კონტაქტი</a></li>
+                <li><a href="category.html">კატეგორიები</a></li>
+               <li> <a href="category-recipes.html">რეცეპტები</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <div class="about-header">
+            <h1>ჩვენი ისტორია</h1>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h2>გამარჯობა, მე ვარ გაგა!</h2>
+                <p1>TasteBud-ის შემქმნელი</p1>
+            </div>
+            
+            <div class="about-image">
+                <img src="assets/TASTEBUD.png" alt="ნინო - TasteBud-ის დამფუძნებელი">
+            </div>
+            
+            <div class="story-section">
+                <h2>როგორ გაჩნდა TasteBud?</h2>
+    
+                <ul>
+                    <li>🧑‍🍳 ყველას შეეძლება ისწავლოს ნამდვილი ქართული კერძების მომზადება</li>
+                    <li>🌍 უცხოელებს ექნებათ ხელმისაწვდომი რესურსი ქართული კულინარიის შესასწავლად</li>
+                    <li>💡 ახალგაზრდა მზარეულებს შეეძლებათ გამოიგონონ ახალი ვერსიები კლასიკური რეცეპტების</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="values-section">
+            <h2>ჩვენი ღირებულებები</h2>
+            <div class="values-list">
+                <div class="value-item">
+                    <h3>🍅 ავთენტურობა</h3>
+                    <p>ყველა რეცეპტი დაფუძნებულია ტრადიციულ ტექნიკებზე და ინგრედიენტებზე</p>
+                </div>
+                
+                <div class="value-item">
+                    <h3>👩‍🍳 ხელმისაწვდომობა</h3>
+                    <p>ვცდილობთ რეცეპტები იყოს გასაგები როგორც პროფესიონალებისთვის, ასევე ახალბედებისთვის</p>
+                </div>
+                
+                <div class="value-item">
+                    <h3>💖 სიყვარული</h3>
+                    <p>ყოველი კერძი უნდა იყოს მომზადებული სიყვარულით და ზრუნვით</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-motto">კულინარიული ხელოვნება - ყველასთვის!</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="about.html" class="footer-link">ჩვენს შესახებ</a>
+                <a href="contact.html" class="footer-link">კონტაქტი</a>
+                <a href="privacy.html" class="footer-link">კონფიდენციალურობა</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100059814253750" class="social-icon" target="_blank">📘</a>
+                <a href="https://www.instagram.com/gaga_kurbanidze/" class="social-icon" target="_blank">📷</a>
+                <a href="https://youtube.com" class="social-icon" target="_blank">▶️</a>
+                <a href="https://pinterest.com" class="social-icon" target="_blank">📌</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კატეგორიის რეცეპტები - TasteBud</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Noto+Sans+Georgian:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+
+        .category-header {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 0 1rem;
+        }
+        
+        .category-title {
+            color: #e74c3c;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-description {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🍽️ TasteBud</div>
+        
+        <button class="menu-toggle" aria-label="მენიუ">
+            <span class="hamburger">☰</span>
+            <span class="close">×</span>
+        </button>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="recipe.html">ინგრედიენტები</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="contact.html">კონტაქტი</a></li>
+                <li><a href="category.html">კატეგორიები</a></li>
+               <li> <a href="category-recipes.html">რეცეპტები</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="category-recipes-page">
+        <div class="category-header">
+            <h1 class="category-title" id="categoryName">კატეგორიის სახელი</h1>
+            <p class="category-description" id="categoryDescription">კატეგორიის აღწერა დინამიურად ჩაიტვირთება</p>
+        </div>
+
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="all">ყველა</button>
+            <button class="filter-btn" data-category="cakes">ნამცხვრები</button>
+            <button class="filter-btn" data-category="salads">სალათები</button>
+            <button class="filter-btn" data-category="main">მთავარი კერძები</button>
+            <button class="filter-btn" data-category="desserts">დესერტები</button>
+        </div>
+
+        <div class="recipes-grid">
+            <article class="recipe-card" data-category="cakes">
+                <div class="recipe-image-container">
+                    <img src="assets/th (14).jpg" alt="ქართული ნამცხვარი" class="recipe-image">
+                </div>
+                <div class="recipe-content">
+                    <h3 class="recipe-title">ქართული ნამცხვარი</h3>
+                    <div class="recipe-meta">
+                        <span class="time">⏱️ 1 საათი</span>
+                        <span class="difficulty">⚡️ მარტივი</span>
+                    </div>
+                    <p class="recipe-description">ტრადიციული ქართული ნამცხვარი თაფლით და კაკალი</p>
+                    <a href="recipe.html?id=1" class="details-button">დეტალურად</a>
+                </div>
+            </article>
+
+            <article class="recipe-card" data-category="salads">
+                <div class="recipe-image-container">
+                    <img src="assets/cezar.jpg" alt="ზაფხულის სალათი" class="recipe-image">
+                </div>
+                <div class="recipe-content">
+                    <h3 class="recipe-title">ზაფხულის სალათი</h3>
+                    <div class="recipe-meta">
+                        <span class="time">⏱️ 20 წუთი</span>
+                        <span class="difficulty">⚡️ მარტივი</span>
+                    </div>
+                    <p class="recipe-description">ახალი ბოსტნეულის სალათი ზაფხულისთვის</p>
+                    <a href="recipe.html?id=2" class="details-button">დეტალურად</a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="pagination">
+            <button class="pagination-button" disabled>← წინა</button>
+            <span class="current-page">1</span>
+            <button class="pagination-button">შემდეგი →</button>
+        </div>
+    </main>
+
+<div class="additional-filters">
+    <div class="quick-actions">
+        <button class="action-btn" id="saveAllBtn">
+            <span class="icon">📁</span> შენახვა ყველა
+        </button>
+        <button class="action-btn" id="quickRecipesBtn">
+            <span class="icon">⚡</span> სწრაფი რეცეპტები
+        </button>
+    </div>
+    
+    <div class="sort-options">
+        <label for="sortSelect">დალაგება:</label>
+        <select id="sortSelect" class="sort-select">
+            <option value="default">სტანდარტული</option>
+            <option value="time-asc">მომზადების დრო (ზრდადი)</option>
+            <option value="time-desc">მომზადების დრო (კლებადი)</option>
+            <option value="difficulty">სირთულე</option>
+        </select>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-motto">კულინარიული ხელოვნება - ყველასთვის!</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">მთავარი</a>
+                <a href="about.html" class="footer-link">ჩვენს შესახებ</a>
+                <a href="contact.html" class="footer-link">კონტაქტი</a>
+                <a href="privacy.html" class="footer-link">კონფიდენციალურობა</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100059814253750" class="social-icon" target="_blank">📘</a>
+                <a href="https://www.instagram.com/gaga_kurbanidze/" class="social-icon" target="_blank">📷</a>
+                <a href="https://youtube.com" class="social-icon" target="_blank">▶️</a>
+                <a href="https://pinterest.com" class="social-icon" target="_blank">📌</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>შოკოლადის ნამცხვარი - TasteBud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="მენიუ">
+            <span class="hamburger">☰</span>
+            <span class="close">×</span>
+        </button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="recipe.html">ინგრედიენტები</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="contact.html">კონტაქტი</a></li>
+                <li><a href="category.html">კატეგორიები</a></li>
+               <li> <a href="category-recipes.html">რეცეპტები</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="recipe-actions">
+        <button id="backButton" class="action-button">
+            ← უკან დაბრუნება
+        </button>
+        <button id="saveButton" class="action-button">
+            <span id="saveIcon">❤️</span> შენახვა
+        </button>
+    </div>
+    
+    <div class="notification" id="notification">
+        რეცეპტი შენახულია თქვენს სანიშნეებში!
+    </div>
+
+    <main class="recipe-container">
+        <article class="recipe-details">
+            <div class="recipe-image-container">
+                <img src="assets/th (11).jpg" alt="შოკოლადის ნამცხვარი" class="recipe-main-image">
+                <div class="recipe-badge">ხანძრის რეცეპტი</div>
+            </div>
+
+            <div class="recipe-header">
+                <h1>შოკოლადის ნამცხვარი</h1>
+                <div class="recipe-meta">
+                    <span class="recipe-time">⏱️ 1 საათი 30 წუთი</span>
+                    <span class="recipe-servings">👥 8 პორცია</span>
+                    <span class="recipe-difficulty">🧑‍🍳 საშუალო სირთულე</span>
+                </div>
+                <p class="recipe-description">ნაზი, ტენიანი შოკოლადის ნამცხვარი, რომელიც დნება პირში. იდეალურია დღესასწაულებისთვის ან სპეციალური დღეებისთვის.</p>
+            </div>
+
+            <div class="recipe-content">
+                <section class="ingredients-section">
+                    <h2>ინგრედიენტები</h2>
+                    <ul class="ingredients-list">
+                        <li><input type="checkbox" id="ing1"> <label for="ing1">200 გ შავი შოკოლადი</label></li>
+                        <li><input type="checkbox" id="ing2"> <label for="ing2">200 გ კარაქი</label></li>
+                        <li><input type="checkbox" id="ing3"> <label for="ing3">200 გ შაქარი</label></li>
+                        <li><input type="checkbox" id="ing4"> <label for="ing4">4 კვერცხი</label></li>
+                        <li><input type="checkbox" id="ing5"> <label for="ing5">100 გ ფქვილი</label></li>
+                        <li><input type="checkbox" id="ing6"> <label for="ing6">1 ჩ.კ. ვანილი</label></li>
+                    </ul>
+                </section>
+
+                <section class="instructions-section">
+                    <h2>მომზადების წესი</h2>
+                    <ol class="instructions-list">
+                        <li>
+                            <h3>შოკოლადის მომზადება</h3>
+                            <p>შოკოლადი და კარაქი დნება ორმაგ ქვაბზე მცირე ცეცხლზე, განაგრძეთ არევა სანამ სრულიად არ დნება.</p>
+                        </li>
+                        <li>
+                            <h3>ცომის მომზადება</h3>
+                            <p>ცალ-ცალკე აურიეთ კვერცხები შაქართან, სანამ მსუბუქი და ფუმფულა მასა არ მიიღება. ნელ-ნელა დაამატეთ შოკოლადის ნარევი.</p>
+                        </li>
+                        <li>
+                            <h3>გამოცხობა</h3>
+                            <p>ჩაასხით ფორმაში და გამოაცხობეთ 180°C ტემპერატურაზე 40-45 წუთის განმავლობაში.</p>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+
+            <section class="recipe-tips">
+                <h2>შევარდენის რჩევები</h2>
+                <div class="tips-content">
+                    <p>✅ ნამცხვარი მოათავსეთ ღუმელის შუა რეკზე გამოცხობისთვის</p>
+                    <p>✅ შეამოწმეთ სიმზადე ხის ჩხირით - თუ გამოტანისას მასზე ნამცხვრის ნაწილაკები არ რჩება, მზადაა</p>
+                    <p>✅ დაგრილების შემდეგ მოაყარეთ შაქრის ფხვნილი ან გალიანი შოკოლადის გლაზური</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-motto">კულინარიული ხელოვნება - ყველასთვის!</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="about.html" class="footer-link">ჩვენს შესახებ</a>
+                <a href="contact.html" class="footer-link">კონტაქტი</a>
+                <a href="privacy.html" class="footer-link">კონფიდენციალურობა</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100059814253750" class="social-icon" target="_blank">📘</a>
+                <a href="https://www.instagram.com/gaga_kurbanidze/" class="social-icon" target="_blank">📷</a>
+                <a href="https://youtube.com" class="social-icon" target="_blank">▶️</a>
+                <a href="https://pinterest.com" class="social-icon" target="_blank">📌</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

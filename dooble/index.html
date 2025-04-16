@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteBud - კულინარიული ბლოგი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🍽️ TasteBud</div>
+        
+        <button class="menu-toggle" aria-label="მენიუ">
+            <span class="hamburger">☰</span>
+            <span class="close">×</span>
+        </button>
+        
+        <nav class="main-nav">
+            <ul>
+               <li><a href="index.html">მთავარი</a></li>
+                <li><a href="recipe.html">ინგრედიენტები</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="contact.html">კონტაქტი</a></li>
+                <li><a href="category.html">კატეგორიები</a></li>
+               <li> <a href="category-recipes.html">რეცეპტები</a></li>
+            </ul>
+        </nav>
+
+        <button id="theme-toggle">🌙</button>
+
+    </header>
+<section class="search-section">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="შეიყვანე რეცეპტის სახელი, ინგრედიენტი..." class="search-input">
+        <button id="searchButton" class="search-button">ძებნა</button>
+    </div>
+    <div id="searchResults" class="search-results"></div>
+</section>
+
+    <script src="script.js"></script>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-motto">კულინარიული ხელოვნება - ყველასთვის!</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="about.html" class="footer-link">ჩვენს შესახებ</a>
+                <a href="contact.html" class="footer-link">კონტაქტი</a>
+                <a href="privacy.html" class="footer-link">კონფიდენციალურობა</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100059814253750" class="social-icon" target="_blank">📘</a>
+                <a href="https://www.instagram.com/gaga_kurbanidze/" class="social-icon" target="_blank">📷</a>
+                <a href="https://youtube.com" class="social-icon" target="_blank">▶️</a>
+                <a href="https://pinterest.com" class="social-icon" target="_blank">📌</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
